@@ -17,7 +17,7 @@ const Header = () => {
           className='m-auto'/>
         </Navbar.Text>
         <Nav>
-          <Dropdown alignRight>
+          <Dropdown>
             <Dropdown.Toggle variant='info'>
               <FaShoppingCart color='white' fontSize="25px" />
               <Badge bg='info'>{10}</Badge>
