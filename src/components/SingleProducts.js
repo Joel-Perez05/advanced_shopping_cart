@@ -20,9 +20,9 @@ const SingleProducts = ({prod}) => {
             <span>$ {prod.price.split(".")[0]}</span>
             {
               prod.fastDelivery? (
-                <div>Fast Delivery</div>
+                <div>Prime 2 Day Shipping</div>
               ) : (
-                <div>4 Day Delivery</div>
+                <div>Standard 4 Day Delivery</div>
               )
             }
             <Rating rating={prod.ratings} />

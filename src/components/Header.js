@@ -10,7 +10,8 @@ const Header = () => {
 
   const {
     state: {cart},
-    dispatch
+    dispatch,
+    productDispatch
   } = CartState();
 
   return (
@@ -21,9 +22,16 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Text className='search'>
           <FormControl 
-          style={{width: 500}}
-          placeholder="Search"
-          className='m-auto'/>
+            style={{width: 500}}
+            placeholder="Search"
+            className='m-auto'
+            onChange={(e) => {
+              productDispatch({
+                type: "FILTER_BY_SEARCH",
+                payload: e.target.value,
+              })
+            }}
+          />
         </Navbar.Text>
         <Nav>
           <Dropdown>
