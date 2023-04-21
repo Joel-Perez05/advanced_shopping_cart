@@ -16,7 +16,7 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label="Ascending"
+          label="Price: low to high"
           name='group1'
           type='radio'
           id={`inline-1`}
@@ -32,7 +32,7 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label="Descending"
+          label="Price: high to low"
           name='group1'
           type='radio'
           id={`inline-2`}
